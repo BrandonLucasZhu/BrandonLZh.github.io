@@ -1,0 +1,24 @@
+.word-font{
+  font-family: "Palatino Linotype","Book Antiqua", Palatino, serif; 
+}
+
+.font-title{
+  font-size: 48px
+  font-size: 5vw;
+}
+
+.grey-font{
+	color: #f1f1f1
+}
+
+.light-grey-font{
+	color: #B0B0B0
+}
+
+.darkskyblue{
+	color: #264B75
+}
+
+.lighterdarkskyblue{
+	color: #003366
+}
