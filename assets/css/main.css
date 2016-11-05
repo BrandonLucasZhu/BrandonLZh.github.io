@@ -91,9 +91,21 @@ body{
 
 .parallax{
   background-attachment: fixed;
-  padding: 350px 0;
+  height:100vh;
   background-repeat: no-repeat;
   
+}
+
+.sub-heading-padding{
+  padding: 150px 0px;
+}
+
+.zero-padding{
+  padding: 0px 0px 0px 0px;
+}
+
+.align-images-mid{
+  text-align: center;
 }
 
 .footer-padding{
