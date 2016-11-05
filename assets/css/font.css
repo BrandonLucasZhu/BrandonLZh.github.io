@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
 .word-font{
-  font-family: "Palatino Linotype","Book Antiqua", Palatino, serif; 
+  font-family: 'Roboto', sans-serif;
 }
 
 .font-title{
