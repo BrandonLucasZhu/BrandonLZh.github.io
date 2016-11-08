@@ -22,6 +22,7 @@ body{
 
 
 
+
 .display-container{
   position: relative;
 }
@@ -47,16 +48,6 @@ body{
   -ms-transform:translate(-50%,-50%);
 }
 
-
-.image {
-  position: relative;
-  float: left;
-  width: 1000px;
-  height: 1000px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .large-padding{
   padding:16px 32px;
@@ -88,12 +79,18 @@ body{
   width:1000px;
 }
 
+.ele-to-right{
+  float: right;
+}
 
-.parallax{
-  background-attachment: fixed;
+.inline{
+  display: inline;
+}
+
+.parallaxpic{
   height:100vh;
   background-repeat: no-repeat;
-  
+  background-attachment: fixed;   
 }
 
 
@@ -103,15 +100,15 @@ body{
 }
 
 .zero-padding{
-  padding: 0;
+  padding: 0px;
 }
 
 .zero-margin{
-  margin: 0;
+  margin: 0px 0px 0px 0px;
 }
 
 .zero-border{
-  border: 0;
+  border: 0px;
 }
 
 .align-images-mid{

@@ -11,23 +11,34 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 	<!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"> 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
 </head>
 <body>
-<div id=wrapper>
-	<!-- Header -->
-	<header>
-	</header>
+<!--
+<div>
+	<nav id="mybar" class="navbar navbar-light bg-faded">
+		<ul class="ele-to-right">
+			<li class="inline">
+				<a class="" href="">Home</a>
+			</li>
+			<li class="inline">
+				<a class="" href="">Resume</a>
+			</li>	
+			<li class="inline">
+				<a class="" href="">Contact info.</a>
+			</li>
+		</ul>
+	</nav>		
+	-->		
 
 	<section>
-	<div class="parallax full-screen " style="background-image: url('assets/img/road.jpg'); background-size:cover;">
+	<div class="parallaxpic" data-stellar-background-ratio="0.25" style="background-image: url('assets/img/road.jpg'); background-size:cover;">
 		<div class="container">
-			<div class="secondaryborder display-middle text-align-center large-padding stationary-background">
+			<div id="fade" class="secondaryborder display-middle text-align-center large-padding stationary-background">
 				<div class="primary">
 					<h1 class="font-title grey-font"><b>BRANDON LUCAS ZHU<b></h1>
-
 				</div>
 				<div class="secondary">
 					<h2 class="grey-font">Electrical Engineering</h2>
@@ -35,21 +46,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- Page contents --> 
-	<!--
 	</section>
-	<section id="content" style="background-image: url('assets/img/carsunset.jpg'); padding: 200px 0px; background-size: cover;"> 
-		<div class="container" >
-			<div class="row">
-				<div class="col-md-12"">
-					<div class="primary" style="padding-bottom: 100px;">
-						<h4 class=" light-grey-font">"Life's not about how hard of a hit you can
-						give...it's about how many you can take, and still keep moving
-						forward."
-						- Sylvester Stallone, Rocky Balboa</h4>
-				</div>
-			</div>
-	</section> -->
 	<section class="greybackground">
 	<div class="container">		
 			<div class="row sub-heading-padding">
@@ -90,8 +87,8 @@
 	</div>
 	</section>
 
-	<section class="blackbackground zero-padding zero-border zero-margin">
-	<div class="subparallax " style="background-image: url('assets/img/minato.jpg'); background-size:cover; ">
+	<footer class="blackbackground zero-padding zero-border zero-margin">
+	<div class="subparallax" data-stellar-background-ratio="0.25" style="background-image: url('assets/img/minato.jpg'); background-size:cover; ">
 		<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -102,11 +99,7 @@
 				</div>	
 		</div>
 	</div>
-	
-
-
-	
-		<div class="darkskyblue mid greybackground footer-padding">
+	<div class="darkskyblue mid greybackground footer-padding">
 		<h4 class=" blackbackground light-grey-font contactmepadding">Feel free to contact me with the links below.</h4>
 			<div class="container">
 				<div class="row">
@@ -127,8 +120,15 @@
 				</div>
 			</div>
 		</div>		
-	</section>	
+	</footer>
 
+
+
+	<script src="assets/js/bz.js"></script>
+	<!--Stellar.js-->
+	<script src="assets/js/jquery-2.0.2.js"></script>
+	<script src="assets/js/jquery.stellar.min.js"></script>
+	<script>$('body').stellar();</script>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
