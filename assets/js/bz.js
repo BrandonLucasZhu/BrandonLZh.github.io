@@ -1,4 +1,4 @@
-$(window).on("load",function() {
+$(document).ready(function() {
   $(window).scroll(function() {
     $(".container").each(function() {
       // Find vertical height of element
@@ -24,9 +24,10 @@ $(document).on('click', 'a', function(event){
 
   $('html,body').animate({
     scrollTop:$( $.attr(this, 'href')).offset().top
-  },1500);
+  },1800);
 
 });
+
 
 
 /*

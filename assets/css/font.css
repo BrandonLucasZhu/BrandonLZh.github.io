@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.white {
+	color:#ffffff;
+}
 
 .word-font{
   font-family: 'Roboto', sans-serif;

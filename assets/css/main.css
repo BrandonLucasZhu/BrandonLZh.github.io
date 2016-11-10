@@ -1,7 +1,11 @@
 body{
   font-family: 'Roboto', sans-serif;
+  overflow-x:hidden; 
 }
 
+a {
+  color:#ffffff;
+}
 
 .greybackground{
   background: #B0B0B0;
@@ -85,16 +89,26 @@ body{
   line-height: 50px;
 }
 
-.navbar-fixed{
-  top:0;
-  z-index: 100;
-  position: fixed;
-  width:100%;
+.navbar{
+  height: 30px;
 }
+
+.navbar-fixed-topp{
+  top:0;
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  background-color: #000000;
+  min-height: 50px;
+  margin-bottom: 0px;
+}
+
 
 .inline{
   display: inline;
 }
+
+
 
 .parallaxpic{
   height:100vh;
