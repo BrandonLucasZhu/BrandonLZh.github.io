@@ -1,16 +1,16 @@
 $(window).on("load",function() {
   $(window).scroll(function() {
     $(".container").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top ;
-      var windowBottom = $(window).scrollTop();
+      // Find vertical height of element
+      var objectBottom = $(this).offset().top; //the objects fixed height
+      var windowBottom = $(window).scrollTop(); //height increasing as scroller is scrolling down
       
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom >= windowBottom) { //object comes into view (scrolling down)
+      //Once element is greater than objects fixed height, then the object will fade out
+      if (objectBottom >= windowBottom) { 
         if ($(this).css("opacity")==0) {
             $(this).fadeTo(2000,1);
           }
-      } else { //object goes out of view (scrolling up)
+      } else { //object is solid when in view
         if ($(this).css("opacity")==1) {
           $(this).fadeTo(2000,0);
           }
@@ -18,4 +18,44 @@ $(window).on("load",function() {
     });
   }); $(window).scroll(); //invoke scroll-handler on page-load
 });
-	
+
+$(document).on('click', 'a', function(event){
+  event.preventDefault();
+
+  $('html,body').animate({
+    scrollTop:$( $.attr(this, 'href')).offset().top
+  },1500);
+
+});
+
+
+/*
+$('a#resume').click(function(){
+  window.scrollBy({
+    top: 300,
+    left:0, 
+    behaviour:'smooth'
+  });
+});
+*/
+
+
+/*	
+$('a#resume').on('click',function(event){
+
+  if (this.hash !== ""){
+
+    event.preventDefault();
+
+
+  var hash = this.hash; 
+
+  $('html,body').animate({
+    scrollTop:$(hash).offset().top
+  },800,fuction(){
+
+    window.location.hash = hash;
+  });
+  }
+ };  
+*/

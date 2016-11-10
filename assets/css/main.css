@@ -21,8 +21,6 @@ body{
 }
 
 
-
-
 .display-container{
   position: relative;
 }
@@ -81,6 +79,17 @@ body{
 
 .ele-to-right{
   float: right;
+}
+
+.vh-mid{
+  line-height: 50px;
+}
+
+.navbar-fixed{
+  top:0;
+  z-index: 100;
+  position: fixed;
+  width:100%;
 }
 
 .inline{
